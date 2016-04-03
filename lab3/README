@@ -1,0 +1,35 @@
+compile program for question A
+  g++ -o lab3 lab3.cpp
+  
+compile program for question B
+  make
+
+result of B:
+  size=1000
+  sort(): 0 seconds
+  v1/v2 are different.
+  insertion_sort(): 0.01 seconds
+  v1/v2 are the same.
+
+  size=10000
+  sort(): 0 seconds
+  v1/v2 are different.
+  insertion_sort(): 1.28 seconds
+  v1/v2 are the same.
+
+  size=100000
+  sort(): 0.05 seconds
+  v1/v2 are different.
+  insertion_sort(): 128.09 seconds
+  v1/v2 are the same.
+
+  size=1000000
+  sort(): 0.6 seconds
+  v1/v2 are different.
+  insertion_sort(): 12811.9 seconds
+  v1/v2 are the same.
+
+explanation of B:
+  sort()[nlogn]
+  insertion_sort()[n^2]
+  因此insertion_sort運算所需的次數會比sort還多次,時間自然也較長
